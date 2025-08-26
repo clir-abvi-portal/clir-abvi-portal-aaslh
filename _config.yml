@@ -1,0 +1,84 @@
+##########
+# collectionbuilder-csv
+# Jekyll Digital Collection Generator
+# https://github.com/CollectionBuilder/collectionbuilder-csv
+##########
+
+##########
+# URL VARIABLES
+#
+# site domain, full URL to the production location of your collection
+url: 
+# path to location on the domain if necessary e.g. /digital/hjccc
+baseurl: /clir-abvi
+# location of code, the full url to your github repository
+source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
+
+##########
+# SITE SETTINGS
+#
+# title of site appears in banner
+title: Amplifying Black Voices of Iowa
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: A collection of digitized resources from organizations throughout Iowa
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Funded by the Mellon Foundation and administered through CLIR (Council on Library and Information Resources), this project digitized thousands of resources created by black Iowans from the 19th through 21st centuries. Explore this site to find local newspapers, oral histories, artifacts, photographs, event programs, and other resources. The resources were contributed by seven organizations collaborating on the grant project."
+# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
+keywords: iowa; history; midwest
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: Iowa State University
+
+##########
+# COLLECTION SETTINGS
+#
+# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
+# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+metadata: aaslh_metadata
+# page generation settings [optional!]
+# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
+# page_gen:
+#   - data: '_SHSI_Practice'
+#     template: 'item'
+#     name: 'objectid'
+#     dir: 'items'
+#     extension: 'html' 
+#     filter: 'objectid'  
+
+##########
+# Site/Organization Branding 
+#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
+#   To remove the branding, comment out these values, or delete them. 
+#
+organization-name: 
+organization-link: 
+organization-logo-banner: 
+organization-logo-nav: 
+
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+##########
+# BUILD SETTINGS 
+#
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [docs/, Rakefile, rakelib/, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md]
+# compress CSS output
+sass:
+  style: compressed
+
+
+# config-browse add:
+# - option to not include newspapers in search
+# - Personal/coorporate Contributer
+# - Collections option
+
+# config-browse delete:
+# - identifier field
